@@ -8,8 +8,8 @@ function App() {
 
       <h2>Forms</h2>
 
-      <MyForm user={{name:"Victor", email:"victor@gmail.com"}} />
-      
+      <MyForm user={{name:"Victor", email:"victor@gmail.com", bio:"Testando textarea"}} />
+
     </div>
   );
 }

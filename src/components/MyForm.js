@@ -2,13 +2,15 @@ import './MyForm.css'
 
 import { useState } from 'react'
 
-const MyForm = ({user}) => {
+const MyForm = ({ user }) => {
 
     // 6 - controlled inputs
 
     // 3 - Gerenciamento de dados
-    const [name, setName] = useState(user ? user.name: '');
-    const [email, setEmail] = useState(user ? user.email: '');
+    const [name, setName] = useState(user ? user.name : '');
+    const [email, setEmail] = useState(user ? user.email : '');
+
+    const [bio, setBio] = useState(user ? user.bio : '');
 
     const handleName = (e) => {
         setName(e.target.value)
@@ -20,7 +22,15 @@ const MyForm = ({user}) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log('Enviando dados')
-        console.log(name, email);
+        console.log(name, email, bio);
+
+        //validacao
+        //envio
+
+        // 7 - Limpar form
+        setName('');
+        setEmail('');
+        setBio('');
     }
 
 
@@ -57,7 +67,16 @@ const MyForm = ({user}) => {
                     />
 
                 </label>
+                {/* 8 - textarea */}
+                <label>
+                    <span>Bio:</span>
+                    <textarea name="bio"
+                        placeholder="Descrição do usuário"
+                        onChange={(e) => setBio(e.target.value)}
+                        value={bio}>
 
+                    </textarea>
+                </label>
                 <input type="submit" value="Enviar" />
 
             </form>
