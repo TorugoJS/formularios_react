@@ -1,5 +1,9 @@
-# Praticando e utilizando meus conhecimentos em React.js, criando simples formulários para fixar o conteúdo.
+# Utilizando meus conhecimentos em React.js, criando simples formulários para fixar o conteúdo.
 
-✔ useState <br>
-✔ Funções <br>
-✔ Props <br>
+## Utilizei:
+
+### ✔ useState <br>
+### ✔ Funções <br>
+### ✔ Props <br>
+
+<hr>
